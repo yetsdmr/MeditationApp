@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A3DBBF12AEFB23E006E90D0 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DBBF02AEFB23E006E90D0 /* MeditationView.swift */; };
+		4A3DBBF92AEFBE43006E90D0 /* RelatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DBBF82AEFBE43006E90D0 /* RelatedModel.swift */; };
+		4A3DBBFB2AEFF2AE006E90D0 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DBBFA2AEFF2AE006E90D0 /* PlayerView.swift */; };
 		4ABB85872AE6C34400086B9A /* MeditationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB85862AE6C34400086B9A /* MeditationAppApp.swift */; };
 		4ABB85892AE6C34400086B9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABB85882AE6C34400086B9A /* ContentView.swift */; };
 		4ABB858B2AE6C34500086B9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB858A2AE6C34500086B9A /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A3DBBF02AEFB23E006E90D0 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		4A3DBBF82AEFBE43006E90D0 /* RelatedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedModel.swift; sourceTree = "<group>"; };
+		4A3DBBFA2AEFF2AE006E90D0 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		4ABB85832AE6C34400086B9A /* MeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB85862AE6C34400086B9A /* MeditationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationAppApp.swift; sourceTree = "<group>"; };
 		4ABB85882AE6C34400086B9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +38,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A3DBBF22AEFBD9E006E90D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A3DBBF02AEFB23E006E90D0 /* MeditationView.swift */,
+				4A3DBBFA2AEFF2AE006E90D0 /* PlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A3DBBF32AEFBDA7006E90D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4A3DBBF42AEFBDB0006E90D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A3DBBF82AEFBE43006E90D0 /* RelatedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A3DBBF52AEFBDDB006E90D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4ABB85862AE6C34400086B9A /* MeditationAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4A3DBBF62AEFBDE9006E90D0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4A3DBBF72AEFBE0A006E90D0 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4A3DBBF72AEFBE0A006E90D0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4A3DBBF42AEFBDB0006E90D0 /* Model */,
+				4A3DBBF32AEFBDA7006E90D0 /* ViewModel */,
+				4A3DBBF22AEFBD9E006E90D0 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		4ABB857A2AE6C34400086B9A = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +107,8 @@
 		4ABB85852AE6C34400086B9A /* MeditationApp */ = {
 			isa = PBXGroup;
 			children = (
-				4ABB85862AE6C34400086B9A /* MeditationAppApp.swift */,
+				4A3DBBF52AEFBDDB006E90D0 /* App */,
+				4A3DBBF62AEFBDE9006E90D0 /* Core */,
 				4ABB85882AE6C34400086B9A /* ContentView.swift */,
 				4ABB858A2AE6C34500086B9A /* Assets.xcassets */,
 				4ABB858C2AE6C34500086B9A /* Preview Content */,
@@ -138,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ABB85892AE6C34400086B9A /* ContentView.swift in Sources */,
+				4A3DBBF12AEFB23E006E90D0 /* MeditationView.swift in Sources */,
 				4ABB85872AE6C34400086B9A /* MeditationAppApp.swift in Sources */,
+				4A3DBBFB2AEFF2AE006E90D0 /* PlayerView.swift in Sources */,
+				4A3DBBF92AEFBE43006E90D0 /* RelatedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
